@@ -1,0 +1,198 @@
+*{
+
+margin:0;
+padding: 0;
+box-sizing: border-box;
+
+}
+body{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+a{
+  text-decoration: none;
+  border: none ; 
+  color: rgb(245, 13, 13)  ;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+.nav{
+
+ background-color: white;
+ color: rgb(250, 250, 250);
+ padding: 20px;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ box-shadow: 0px 0px 0px 20px rgb(112, 89, 133);
+
+}
+
+.link{
+
+  display: flex ;
+  gap: 30px;
+
+}
+.btn{
+  background-color: rgb(223, 47, 47);
+  padding: 10px;
+  border: none;
+  width: 100px;
+  border-radius: 10px;
+}
+.logo{
+  font-size: xx-large;
+  color: black;
+  font-weight: 600;
+}
+.sublogo{
+  color: chartreuse;
+} 
+
+.subminilogo{
+  font-size: small;
+}
+
+.main{
+
+  padding: 70px;
+  background-color: red;
+  text-align: center;
+  color: aliceblue;
+}
+.title{
+  text-align: center;
+  color: red;
+  padding: 20px;
+}
+.content{
+  text-align: center;
+  /* font-size: medium; */
+  color: black;
+  padding: 40px;
+  font-size:medium
+}
+.img{
+
+/* size: 50px; */
+height: 350px;
+width:  500px ;
+padding-block-start: 10px;
+padding-left: 60px;
+
+}
+.subtopic{
+
+color: rgb(1, 1, 14);
+padding: 20px;
+text-align: center;
+
+
+}
+
+/* .mini{
+
+  display: flex;
+  align-items: center;
+  gap: 40px;
+
+} */
+
+.divide{
+  display: flex;
+}
+.mini{
+  text-align: center;
+  padding: 30px;
+  font-size: x-large;
+ 
+}
+.product-card{
+  display: flex;
+  gap: 20px;
+  padding-block-start: 10px;
+  padding: 40px;
+
+}
+
+.card1{
+  background-color: antiquewhite;
+  border-radius: 10px;
+   padding: 30px;
+   height: 250px;
+}
+
+.card2{
+  background-color: antiquewhite;
+  border-radius: 10px;
+  height: 250px;
+  padding: 30px;
+
+}
+
+.card3{
+
+background-color:antiquewhite;
+  border-radius: 10px;
+   padding: 30px;
+   height: 250px;
+
+}
+
+.second{
+
+  display: flex;
+  padding: 150px;
+  text-align: center;
+  padding-block-start: 90px;
+  height: 150PX;
+}
+.first{
+  text-align: center;
+}
+.first1{
+  color: brown;
+}
+.second1{
+  background-color: red;
+  padding: 50px;
+}
+
+.second2{
+  background-color:rgb(2, 2, 17);
+  color: white;
+   padding: 50px;
+   
+}
+
+.secondfooter{
+
+  display: flex;
+  /* gap: 300px; */
+  background-color: rgb(2, 2, 17);
+  color: aliceblue;
+  height: 500px;
+
+}
+.f1{
+  padding: 20px;
+  color: burlywood;
+    padding-block-start: 60px;
+}
+.f2{
+
+  padding: 20px;
+  color: burlywood;
+  padding-block-start: 60px;
+}
+.f3{
+  padding: 20px;
+  color: burlywood;
+  padding-block-start: 60px;
+}
+
+
+
+
