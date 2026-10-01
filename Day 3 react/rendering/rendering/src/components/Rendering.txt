@@ -1,0 +1,83 @@
+
+REACT RENDERING DEFINITION:
+===========================
+
+React rendering is the process of calling components to determine 
+what the UI should look like for the current props and state,
+producing a new React element tree, comparing it with the previous tree,
+and determining the necessary updates to the host environment such as the browser DOM.
+
+INTERVIEW PUREPOSE:
+===================
+
+Rendering in React means React calls the component functions to calculate
+the UI based on the current props and state. React then compares the
+ new result with the previous result and updates the DOM where necessary.
+
+What Is a React Element?
+========================
+
+A React element is essentially a lightweight description of what React wants.
+
+Declarative Rendering:
+======================
+
+function App({ isLoggedIn }) {
+    return (
+        <div>
+            {isLoggedIn ? <h1>Dashboard</h1> : <h1>Login</h1>}
+        </div>
+    );
+}
+
+COMPONENT RENDERING:
+====================
+
+function App() {              -------   app() as a component
+    return <Header />;        -------   header also a component
+}
+
+function Header() {
+    return <h1>My Website</h1>;
+}
+
+REACT TREE:
+===========
+
+This is called to be a react tree. 
+
+<App>
+    <Header />
+    <Main />
+    <Footer />
+</App>
+
+What Is Fiber?
+===============
+
+React Fiber is React's internal architecture for
+representing and processing work on the component tree
+
+A Fiber node stores information associated with a component/element, such as:
+
+type
+key
+props
+state
+parent relationship
+child
+sibling
+alternate
+effect-related information
+
+ Virtual DOM
+=============
+
+=>React uses the Virtual DOM.
+=>The Virtual DOM is a lightweight JavaScript representation of the UI
+ that React uses to determine changes before updating the real DOM.
+
+
+
+
+

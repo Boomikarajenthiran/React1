@@ -1,0 +1,141 @@
+.Header {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  color: white;
+  padding: 22px 70px;
+  dIsplay: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.Header h1 {
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+.Header nav {
+  display: flex;
+  gap: 35px;
+}
+.Header a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+.Header a:hover {
+  color: #ffe600;
+}
+.Body {
+  /* min-height: 450px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  padding: 60px 20px;
+  background: linear-gradient(
+    135deg,
+    #e9c3fc,
+    #5ec5fc
+  );
+}
+.Body h1 {
+  font-size: 45px;
+  color: #172554;
+  margin-bottom: 20px;
+}
+.Body p {
+  font-size: 19px;
+  color: #334155;
+  margin-bottom: 30px;
+}
+.Body button {
+  border: none;
+  background: linear-gradient(
+    90deg,
+    #ff512f,
+    #dd2476
+  );
+  color: white;
+  padding: 14px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(221, 36, 118, 0.3);
+  transition: 0.3s;
+}
+.Body button:hover {
+  transform: translateY(-3px);
+}
+.About {
+  padding: 70px 100px;
+  text-align: center;
+  background: white;
+}
+.About h1 {
+  font-size: 36px;
+  color: #6a11cb;
+  margin-bottom: 25px;
+}
+.About p {
+  max-width: 700px;
+
+  margin: 10px auto;
+  font-size: 17px;
+  line-height: 1.7;
+  color: #475569;
+}
+.About h2 {
+  margin-top: 35px;
+  margin-bottom: 20px;
+  color: #2575fc;
+}
+.About ul {
+  list-style: none;
+  max-width: 500px;
+  margin: auto;
+}
+.About li {
+  background: #f1f5ff;
+  margin: 10px 0;
+  padding: 13px;
+  border-radius: 10px;
+  color: #334155;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+.Contact {
+  padding: 70px 20px;
+  text-align: center;
+  background: linear-gradient(
+    135deg,
+    #84798d,
+    #a8edea
+  );
+}
+.Contact h1 {
+  font-size: 36px;
+  color: #172554;
+  margin-bottom: 20px;
+}
+.Contact p {
+  font-size: 18px;
+  margin: 12px;
+  color: #334155;
+}
+.Footer {
+  background: #365392;
+  color: white;
+  text-align: center;
+  padding: 35px 20px;
+}
+.Footer h3 {
+  color: #60a5fa;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+.Footer p {
+  color: #cbd5e1;
+  margin: 8px;
+}
