@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Learning Hub | JS & React Tasks</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    .card-glow {
+      transition: all 0.3s ease;
+    }
+
+    .card-glow:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 45px rgba(15, 23, 42, 0.12);
+    }
+  </style>
+</head>
+
+<body class="min-h-screen bg-slate-950 text-white">
+
+  <!-- ================= HEADER ================= -->
+
+  <header class="sticky top-0 z-50 border-b border-white/10 bg-slate-950/90 backdrop-blur-xl">
+
+    <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-10">
+
+      <!-- Logo -->
+      <div class="flex items-center gap-4">
+
+        <div class="flex h-11 w-11 items-center justify-center rounded-xl
+                    bg-gradient-to-br from-violet-500 to-indigo-600
+                    shadow-lg shadow-violet-500/20">
+
+          <span class="text-lg font-black text-white">
+            &lt;/&gt;
+          </span>
+
+        </div>
+
+        <div>
+          <h1 class="text-lg font-bold tracking-wide">
+            CODE<span class="text-violet-400">LAB</span>
+          </h1>
+
+          <p class="text-xs text-slate-400">
+            JavaScript & React Learning
+          </p>
+        </div>
+
+      </div>
+
+
+      <!-- Status -->
+      <div class="hidden items-center gap-3 sm:flex">
+
+        <div class="flex items-center gap-2 rounded-full
+                    border border-emerald-400/20
+                    bg-emerald-400/10
+                    px-4 py-2">
+
+          <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
+
+          <span class="text-xs font-semibold text-emerald-300">
+            Learning Mode
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- ================= HERO ================= -->
+
+  <section class="relative overflow-hidden">
+
+    <!-- Background glow -->
+
+    <div class="absolute -left-40 -top-40 h-96 w-96 rounded-full
+                bg-violet-600/20 blur-3xl"></div>
+
+    <div class="absolute -right-40 top-20 h-96 w-96 rounded-full
+                bg-cyan-500/10 blur-3xl"></div>
+
+
+    <div class="relative mx-auto max-w-7xl px-6 py-20 lg:px-10">
+
+      <div class="max-w-3xl">
+
+        <div class="mb-5 inline-flex items-center gap-2 rounded-full
+                    border border-violet-400/20
+                    bg-violet-400/10
+                    px-4 py-2">
+
+          <span class="text-xs font-bold uppercase tracking-[0.2em]
+                       text-violet-300">
+            Learning Path
+          </span>
+
+        </div>
+
+
+        <h2 class="text-4xl font-black tracking-tight sm:text-5xl lg:text-6xl">
+
+          Daily Coding
+          <span class="bg-gradient-to-r from-violet-400 to-cyan-400
+                       bg-clip-text text-transparent">
+            Tasks
+          </span>
+
+        </h2>
+
+
+        <p class="mt-6 max-w-2xl text-base leading-7 text-slate-400 sm:text-lg">
+
+          Practice JavaScript and React every day with hands-on
+          assignments, projects and interactive tasks.
+
+        </p>
+
+
+        <!-- Quick Navigation -->
+
+        <div class="mt-8 flex flex-wrap gap-3">
+
+          <a
+            href="#react"
+            class="rounded-lg bg-violet-600 px-5 py-3 text-sm
+                   font-semibold text-white transition
+                   hover:bg-violet-500"
+          >
+            React Tasks
+          </a>
+
+          <a
+            href="#javascript"
+            class="rounded-lg border border-slate-700
+                   bg-slate-900 px-5 py-3 text-sm
+                   font-semibold text-slate-300 transition
+                   hover:border-slate-500 hover:text-white"
+          >
+            JavaScript Tasks
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= MAIN ================= -->
+
+  <main class="mx-auto max-w-7xl px-6 pb-20 lg:px-10">
+
+
+    <!-- ================= REACT SECTION ================= -->
+
+    <section id="react" class="mb-20">
+
+      <!-- Section Header -->
+
+      <div class="mb-8 flex flex-col gap-4 sm:flex-row
+                  sm:items-end sm:justify-between">
+
+        <div>
+
+          <div class="mb-2 flex items-center gap-2">
+
+            <span class="h-2 w-2 rounded-full bg-cyan-400"></span>
+
+            <p class="text-xs font-bold uppercase
+                      tracking-[0.2em] text-cyan-400">
+              Section 01
+            </p>
+
+          </div>
+
+          <h2 class="text-3xl font-bold text-white">
+            React Tasks
+          </h2>
+
+          <p class="mt-2 text-sm text-slate-500">
+            Build and practice React concepts step by step.
+          </p>
+
+        </div>
+
+
+        <span class="w-fit rounded-full border border-cyan-400/20
+                     bg-cyan-400/10 px-4 py-2 text-xs
+                     font-semibold text-cyan-300">
+
+          6 Assignments
+
+        </span>
+
+      </div>
+
+
+      <!-- React Cards -->
+
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+
+
+        <!-- React Day 1 -->
+
+        <div class="card-glow overflow-hidden rounded-2xl
+                    border border-slate-800 bg-slate-900">
+
+          <div class="h-1 bg-gradient-to-r from-cyan-400 to-blue-500"></div>
+
+          <div class="p-6">
+
+            <div class="flex items-start justify-between">
+
+              <div>
+
+                <p class="text-[10px] font-bold uppercase
+                          tracking-[0.2em] text-slate-500">
+                  Day
+                </p>
+
+                <p class="mt-1 text-4xl font-black text-white">
+                  01
+                </p>
+
+              </div>
+
+              <div class="flex h-12 w-12 items-center justify-center
+                          rounded-xl bg-cyan-400/10">
+
+                <span class="text-sm font-black text-cyan-400">
+                  REACT
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <div class="mt-8">
+
+              <h3 class="text-lg font-bold text-white">
+                React Basics
+              </h3>
+
+              <p class="mt-2 text-sm text-slate-500">
+                Introduction to React fundamentals.
+              </p>
+
+            </div>
+
+
+            <a
+              href="http://localhost:5173/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mt-6 flex h-11 w-full items-center
+                     justify-center gap-2 rounded-xl
+                     bg-cyan-500 text-sm font-bold
+                     text-slate-950 transition
+                     hover:bg-cyan-400"
+            >
+              View Task
+              <span>→</span>
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- React Day 2 -->
+
+        <div class="card-glow overflow-hidden rounded-2xl
+                    border border-slate-800 bg-slate-900">
+
+          <div class="h-1 bg-gradient-to-r from-cyan-400 to-blue-500"></div>
+
+          <div class="p-6">
+
+            <div class="flex items-start justify-between">
+
+              <div>
+
+                <p class="text-[10px] font-bold uppercase
+                          tracking-[0.2em] text-slate-500">
+                  Day
+                </p>
+
+                <p class="mt-1 text-4xl font-black text-white">
+                  02
+                </p>
+
+              </div>
+
+              <div class="flex h-12 w-12 items-center justify-center
+                          rounded-xl bg-cyan-400/10">
+
+                <span class="text-sm font-black text-cyan-400">
+                  REACT
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <div class="mt-8">
+
+              <h3 class="text-lg font-bold text-white">
+                React Components
+              </h3>
+
+              <p class="mt-2 text-sm text-slate-500">
+                Practice reusable React components.
+              </p>
+
+            </div>
+
+
+            <a
+              href="https://radiant-banoffee-506512.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mt-6 flex h-11 w-full items-center
+                     justify-center gap-2 rounded-xl
+                     bg-cyan-500 text-sm font-bold
+                     text-slate-950 transition
+                     hover:bg-cyan-400"
+            >
+              View Task
+              <span>→</span>
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- React Day 3 -->
+
+        <div class="card-glow overflow-hidden rounded-2xl
+                    border border-slate-800 bg-slate-900">
+
+          <div class="h-1 bg-gradient-to-r from-cyan-400 to-blue-500"></div>
+
+          <div class="p-6">
+
+            <div class="flex items-start justify-between">
+
+              <div>
+
+                <p class="text-[10px] font-bold uppercase
+                          tracking-[0.2em] text-slate-500">
+                  Day
+                </p>
+
+                <p class="mt-1 text-4xl font-black text-white">
+                  03
+                </p>
+
+              </div>
+
+              <div class="flex h-12 w-12 items-center justify-center
+                          rounded-xl bg-cyan-400/10">
+
+                <span class="text-sm font-black text-cyan-400">
+                  REACT
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <div class="mt-8">
+
+              <h3 class="text-lg font-bold text-white">
+                React UI
+              </h3>
+
+              <p class="mt-2 text-sm text-slate-500">
+                Create reusable interface components.
+              </p>
+
+            </div>
+
+
+            <a
+              href="https://component-puce.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mt-6 flex h-11 w-full items-center
+                     justify-center gap-2 rounded-xl
+                     bg-cyan-500 text-sm font-bold
+                     text-slate-950 transition
+                     hover:bg-cyan-400"
+            >
+              View Task
+              <span>→</span>
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- React Day 4 -->
+
+        <div class="card-glow overflow-hidden rounded-2xl
+                    border border-slate-800 bg-slate-900">
+
+          <div class="h-1 bg-gradient-to-r from-cyan-400 to-blue-500"></div>
+
+          <div class="p-6">
+
+            <div class="flex items-start justify-between">
+
+              <div>
+
+                <p class="text-[10px] font-bold uppercase
+                          tracking-[0.2em] text-slate-500">
+                  Day
+                </p>
+
+                <p class="mt-1 text-4xl font-black text-white">
+                  04
+                </p>
+
+              </div>
+
+              <div class="flex h-12 w-12 items-center justify-center
+                          rounded-xl bg-cyan-400/10">
+
+                <span class="text-sm font-black text-cyan-400">
+                  REACT
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <div class="mt-8">
+
+              <h3 class="text-lg font-bold text-white">
+                React Routing
+              </h3>
+
+              <p class="mt-2 text-sm text-slate-500">
+                Work with pages and navigation.
+              </p>
+
+            </div>
+
+
+            <a
+              href="./Backend/REACT/DAY4/Task/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mt-6 flex h-11 w-full items-center
+                     justify-center gap-2 rounded-xl
+                     bg-cyan-500 text-sm font-bold
+                     text-slate-950 transition
+                     hover:bg-cyan-400"
+            >
+              View Task
+              <span>→</span>
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- React Day 5 -->
+
+        <div class="card-glow overflow-hidden rounded-2xl
+                    border border-slate-800 bg-slate-900">
+
+          <div class="h-1 bg-gradient-to-r from-cyan-400 to-blue-500"></div>
+
+          <div class="p-6">
+
+            <div class="flex items-start justify-between">
+
+              <div>
+
+                <p class="text-[10px] font-bold uppercase
+                          tracking-[0.2em] text-slate-500">
+                  Day
+                </p>
+
+                <p class="mt-1 text-4xl font-black text-white">
+                  05
+                </p>
+
+              </div>
+
+              <div class="flex h-12 w-12 items-center justify-center
+                          rounded-xl bg-cyan-400/10">
+
+                <span class="text-sm font-black text-cyan-400">
+                  REACT
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <div class="mt-8">
+
+              <h3 class="text-lg font-bold text-white">
+                React Hooks
+              </h3>
+
+              <p class="mt-2 text-sm text-slate-500">
+                Practice React hooks and state.
+              </p>
+
+            </div>
+
+
+            <a
+              href="./Backend/REACT/DAY5/Day5Task.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mt-6 flex h-11 w-full items-center
+                     justify-center gap-2 rounded-xl
+                     bg-cyan-500 text-sm font-bold
+                     text-slate-950 transition
+                     hover:bg-cyan-400"
+            >
+              View Task
+              <span>→</span>
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- React Day 6 -->
+
+        <div class="card-glow overflow-hidden rounded-2xl
+                    border border-slate-800 bg-slate-900">
+
+          <div class="h-1 bg-gradient-to-r from-cyan-400 to-blue-500"></div>
+
+          <div class="p-6">
+
+            <div class="flex items-start justify-between">
+
+              <div>
+
+                <p class="text-[10px] font-bold uppercase
+                          tracking-[0.2em] text-slate-500">
+                  Day
+                </p>
+
+                <p class="mt-1 text-4xl font-black text-white">
+                  06
+                </p>
+
+              </div>
+
+              <div class="flex h-12 w-12 items-center justify-center
+                          rounded-xl bg-cyan-400/10">
+
+                <span class="text-sm font-black text-cyan-400">
+                  REACT
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <div class="mt-8">
+
+              <h3 class="text-lg font-bold text-white">
+                MERN Project
+              </h3>
+
+              <p class="mt-2 text-sm text-slate-500">
+                Full-stack React and backend task.
+              </p>
+
+            </div>
+
+
+            <a
+              href="https://mern-backened-9lek-pc7bauzr2-lallisree.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mt-6 flex h-11 w-full items-center
+                     justify-center gap-2 rounded-xl
+                     bg-cyan-500 text-sm font-bold
+                     text-slate-950 transition
+                     hover:bg-cyan-400"
+            >
+              View Task
+              <span>→</span>
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- React Day 7 -->
+
+         <div class="card-glow overflow-hidden rounded-2xl
+                    border border-slate-800 bg-slate-900">
+
+          <div class="h-1 bg-gradient-to-r from-cyan-400 to-blue-500"></div>
+
+          <div class="p-6">
+
+            <div class="flex items-start justify-between">
+
+              <div>
+
+                <p class="text-[10px] font-bold uppercase
+                          tracking-[0.2em] text-slate-500">
+                  Day
+                </p>
+
+                <p class="mt-1 text-4xl font-black text-white">
+                  07
+                </p>
+
+              </div>
+
+              <div class="flex h-12 w-12 items-center justify-center
+                          rounded-xl bg-cyan-400/10">
+
+                <span class="text-sm font-black text-cyan-400">
+                  REACT
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <div class="mt-8">
+
+              <h3 class="text-lg font-bold text-white">
+                MERN Project
+              </h3>
+
+              <p class="mt-2 text-sm text-slate-500">
+                Full-stack React and backend task.
+              </p>
+
+            </div>
+
+
+            <a
+              href="https://react1-7hqi.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mt-6 flex h-11 w-full items-center
+                     justify-center gap-2 rounded-xl
+                     bg-cyan-500 text-sm font-bold
+                     text-slate-950 transition
+                     hover:bg-cyan-400"
+            >
+              View Task
+              <span>→</span>
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= JAVASCRIPT SECTION ================= -->
+
+    <section id="javascript">
+
+      <!-- Section Header -->
+
+      <div class="mb-8 flex flex-col gap-4 sm:flex-row
+                  sm:items-end sm:justify-between">
+
+        <div>
+
+          <div class="mb-2 flex items-center gap-2">
+
+            <span class="h-2 w-2 rounded-full bg-yellow-400"></span>
+
+            <p class="text-xs font-bold uppercase
+                      tracking-[0.2em] text-yellow-400">
+              Section 02
+            </p>
+
+          </div>
+
+          <h2 class="text-3xl font-bold text-white">
+            JavaScript Tasks
+          </h2>
+
+          <p class="mt-2 text-sm text-slate-500">
+            Strengthen your JavaScript fundamentals with daily practice.
+          </p>
+
+        </div>
+
+
+        <span class="w-fit rounded-full border border-yellow-400/20
+                     bg-yellow-400/10 px-4 py-2 text-xs
+                     font-semibold text-yellow-300">
+
+          8 Assignments
+
+        </span>
+
+      </div>
+
+
+      <!-- JavaScript Cards -->
+
+      <div
+        id="javascriptCards"
+        class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+      ></div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer class="border-t border-slate-800 bg-slate-950">
+
+    <div class="mx-auto flex max-w-7xl flex-col
+                items-center justify-between gap-3
+                px-6 py-8 sm:flex-row lg:px-10">
+
+      <div>
+
+        <p class="text-sm font-bold text-white">
+          CODE<span class="text-violet-400">LAB</span>
+        </p>
+
+        <p class="mt-1 text-xs text-slate-600">
+          JavaScript & React Practice
+        </p>
+
+      </div>
+
+
+      <p class="text-xs text-slate-600">
+        Keep learning. Keep building. 🚀
+      </p>
+
+    </div>
+
+  </footer>
+
+
+  <!-- ================= JAVASCRIPT ================= -->
+
+  <script>
+
+    const javascriptTasks = [
+
+      {
+        day: 1,
+        link: "./Backend/JS/Day1/Day1Task.html"
+      },
+
+      {
+        day: 2,
+        link: "./Backend/JS/Day2/looping.html"
+      },
+
+      {
+        day: 3,
+        link: "./Backend/JS/Day3/Day3Task.html"
+      },
+
+      {
+        day: 4,
+        link: "./Backend/JS/Day4/Day4Task.html"
+      },
+
+      {
+        day: 5,
+        link: "./Backend/JS/Day5/Day5Task.html"
+      },
+
+      {
+        day: 6,
+        link: "./Backend/JS/Day6/Day6Task.html"
+      },
+
+      {
+        day: 7,
+        link: "./Backend/JS/Day7/Day7Task.html"
+      },
+
+      {
+        day: 8,
+        link: "./Backend/JS/Day8/Day8Task.html"
+      }
+
+    ];
+
+
+    const javascriptCards =
+      document.getElementById("javascriptCards");
+
+
+    javascriptTasks.forEach((task) => {
+
+      const dayNumber =
+        String(task.day).padStart(2, "0");
+
+
+      const card =
+        document.createElement("div");
+
+
+      card.className =
+        "card-glow overflow-hidden rounded-2xl " +
+        "border border-slate-800 bg-slate-900";
+
+
+      card.innerHTML = `
+
+        <!-- Top Color Line -->
+
+        <div class="h-1 bg-gradient-to-r
+                    from-yellow-300 to-orange-400">
+        </div>
+
+
+        <div class="p-6">
+
+
+          <!-- Day + JS Logo -->
+
+          <div class="flex items-start justify-between">
+
+            <div>
+
+              <p class="text-[10px] font-bold uppercase
+                        tracking-[0.2em] text-slate-500">
+                Day
+              </p>
+
+              <p class="mt-1 text-4xl font-black text-white">
+                ${dayNumber}
+              </p>
+
+            </div>
+
+
+            <div class="flex h-12 w-12
+                        items-center justify-center
+                        rounded-xl bg-yellow-400/10">
+
+              <span class="text-lg font-black text-yellow-300">
+                JS
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <!-- Content -->
+
+          <div class="mt-8">
+
+            <h3 class="text-lg font-bold text-white">
+              JavaScript
+            </h3>
+
+            <p class="mt-2 text-sm text-slate-500">
+              Daily JavaScript practice task.
+            </p>
+
+          </div>
+
+
+          <!-- Button -->
+
+          <a
+            href="${task.link}"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mt-6 flex h-11 w-full
+                   items-center justify-center
+                   gap-2 rounded-xl
+                   bg-yellow-400
+                   text-sm font-bold
+                   text-slate-950
+                   transition
+                   hover:bg-yellow-300"
+          >
+
+            <span>
+              View Task
+            </span>
+
+            <span>
+              →
+            </span>
+
+          </a>
+
+
+        </div>
+      `;
+
+
+      javascriptCards.appendChild(card);
+
+    });
+
+  </script>
+
+</body>
+</html>
