@@ -1,0 +1,36 @@
+/* .banner{
+
+  background-color:darkolivegreen;
+
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.onshowing{
+
+   padding: 10px;
+   width: 100px;
+   height: 100px;
+   background-color:cyan ;
+   border-radius: 60px;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+
+} */
+
+
+.datas{
+
+background-color: chartreuse;
+padding: 20px;
+display: flex;
+gap: 20px;
+align-items: center;
+
+}
